@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet">
+    
+    <title>Travs</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <style type="text/css">
+    #section-top{
+        background-image:url("background.png");
+        box-shadow: inset 0 0 999999px #d49bef;
+        padding-bottom:5px;
+       
+    }
+    section{
+        padding-top:4rem;
+    }
+    #section-newsletter,
+    #yoruba,
+    #continue-button,
+    #submit-button{
+        background-color:#620682;
+    }
+    #howitworks-heading,
+    #comfort,
+    #AboutUs,
+    #brand,
+    #feedback-card-header{
+        color: #620682;
+    }
+    #section-newsletter{
+        padding-bottom:10px;
+        padding-top:2rem;
+    }
+    #formBody{
+      
+    }
+    
+    </style>
+    
+  </head>
+
+    <body>
+        <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md">
+            <div class="container">
+                <a href="#" id="brand" class="h2 navbar-brand">Travs</a>
+                <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false"
+                    aria-controls="navbarNav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex flex-column align-items-right" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-sm-0 mr-lg-3">
+                            <a href="#0" class="nav-link">Abawole</a>
+                        </li>
+                        <li class="nav-item mr-sm-0 mr-lg-3">
+                            <a href="#0" class="nav-link">Awon iwe-iwe</a>
+                        </li>
+                        <li class="nav-item mr-sm-0 mr-lg-3">
+                            <a href="#0" class="nav-link">Iwe irina</a>
+                        </li>
+                        <li class="nav-item mr-sm-0 mr-lg-3">
+                            <a href="#0" class="nav-link">Kan si</a>
+                        </li>
+                        <li class="nav-item mr-sm-0 mr-lg-3">
+                            <a href="#0" class="nav-link">Nipa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link"><button type="button" id="yoruba" class="btn btn-sm text-white">English</button></a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+        <section id="section-top">
+            <div class="container">
+                <div class="card text-center mt-5 mb-5" id ="formBody">
+                    <h2 class="card-header">Wá Ìrìn-àjò pípé rẹ</h2>
+                    <div class="card-body">
+                        <form class="row">
+                            
+
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="departure" class="required sr-only">Departure:</label>
+                                    <select class="form-control" name="departure[location]" id="departure">
+                                    <option selected >Gbigbera</option>
+                                    <option value="Ibadan">Ibadan</option>
+                                    <option value="Ife">Ife</option>
+                                    <option value="Osogbo">Osogbo</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="destination" class="required sr-only">Destination:</label>
+                                    <select class="form-control" name="destination[location]" id="destination">
+                                    <option selected >Opin ajo</option>
+                                    <option value="Abeokuta">Abeokuta</option>
+                                    <option value="Ado-Ekiti">Ado-Ekiti</option>
+                                    <option value="Akure">Akure</option>
+                                    <option value="Ado Ekiti">Ado Ekiti</option>
+                                    <option value="Ibadan">Ibadan</option>
+                                    <option value="Ife">Ife</option>
+                                    <option value="Lagos">Lagos</option>
+                                    <option value="Ondo">Ondo</option>
+                                    <option value="Osogbo">Osogbo</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="date" class="sr-only">Ojọ́:</label>
+                                    <input type="text" class="form-control text-n" onfocusin="(this.type='date')" 
+                                    onfocusout="(this.type='text')" placeholder="Ojọ́:" id="date">
+                                </div>
+                            </div>
+                           
+
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="NumberofAdult" class="sr-only">Number of Adult:</label>
+                                    <input type="number" min="0" max="2" class="form-control" placeholder="Iye Àgbàlagbà" id="NumberofAdult">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="NumberofChild" class="sr-only">Number of Children</label>
+                                    <input type="number" min="0" max="2" class="form-control" placeholder="Iye omokekere" id="NumberofChild">
+                                </div>
+                            </div>
+                        
+                      
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="transportCompany" class="required sr-only">Transport company:</label>
+                                    <select class="form-control" name="transportCompany" id="transportCompany">
+                                        <option selected> Yan ile-ise irinna</option>
+                                        <option value="Ejire Transport">Ejire Transport</option>
+                                        <option value="IMO Transport">IMO Transport</option>
+                                        <option value="City Rollers Transport">City Roller Transport</option>
+                                        <option value="Eagle Transport">Eagle Transport</option>
+                                        <option value="Ifesinachi Transport">Ifesinachi Transport</option>
+                                        <option value="Carbie Transport">Carbie Roller Transport</option>
+                                    </select>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                        <a href="guoYoruba.html" class="mb-3"><button id="continue-button" class="btn text-white">Tesiwaju</button> </a>
+                    </div>
+                    
+                </div>    
+            </div>
+        </section>
+        <div class="container">
+            <section id="section-HowItWorks">
+                <h2 class="display-6 mb-4 text-center" id="howitworks-heading">Bí o ti Ṣiṣẹ́</h2>
+                <div class="row">
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center mb-5">
+                        <div class="h1 text-center"> <i class="fa fa-calendar mb-4"></i></div>
+                        <h3 class="h4 text-center">Book Online</h3>
+                        <p class="text-center">Yan opin irin ajo re ki o se ifiṣura kan</p> 
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center mb-5">
+                        <div class="h1 text-center"> <i class="fa fa-money mb-4"></i></div>
+                        <h3 class="h4 text-center">Isanwo</h3>
+                        <p class="text-center">Sanwo fun irin-ajo re ni lilo eyikeyi alabode</p> 
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center mb-5">
+                        <div class="h1 text-center"> <i class="fa fa-id-card mb-4"></i></div>
+                        <h3 class="h4 text-center">Gba tikẹti</h3>
+                        <p class="text-center">Gba tiketi iwole re lehin ti o sanwo fun irin-ajo na</p> 
+                    </div>
+                </div>
+            </section>
+            <section id="Section-MakeyourTrip">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                        <img class="w-100" src="showcase01.png">
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-left my-auto">
+                        <h3>Ṣe irin-ajo rẹ yiyara ati </br> itunu diẹ sii</br><small id="comfort"class="display-6">itunu rẹ, ayo wa</small></h3>
+                    </div>
+                </div>
+            </section>
+            <section id="section-AboutUs">
+                <div class="row">
+                    <div class="col-12 col-md-6 my-auto ">
+                        <img class="w-50 d-block mb-4 mb-md-0 mx-auto" src="showcase02.jpg">
+                    </div>
+                    <div class="col-12 col-md-6 my-auto">
+                        <h2 class="display-6 mb-4 text-center" id="AboutUs">NIPA WA</h2>
+                        <p>
+                            Travs jẹ eto iṣẹ ti o ni agbara ti pese gbigbe akoko ati awon solusan eeka pelu ipele giga ti
+                            ipaniyan ati itẹlọrun alabara bii aabo alailẹgbẹ, itunu ati iye eto-oro aje. Aye wa jẹ asọtẹlẹ 
+                            lori iwulo lati ṣe afara anfani iṣowo ati awon aaye iṣẹ ni ile-iṣẹ naa. Ero wa ni lati ṣe idaniwo
+                            laarin awon alabara lọwọlọwọ ati ti ifojusona bi awoṣe ti ipaniyan ni ile-iṣẹ gbigbe. Iduroṣinṣin, 
+                            didara julọ, ifẹ, emi ẹgbẹ, ibawi jẹ awon iye pataki wa ni Travs. 
+
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="section-feedback">
+                <div class="container">
+                    <div class="card text-center mt-4 mb-4">
+                        <h2  class="card-header" id="feedback-card-header">Idahun</h2>
+                        <form class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name" class="sr-only">Name:</label>
+                                        <input type="text" class="form-control" placeholder="Oruko" id="name">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="email" class="sr-only">Email:</label>
+                                        <input type="email" class="form-control" placeholder="Imeeli" id="email">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="phonenumber" class="sr-only">Mobile Number:</label>
+                                        <input type="tel" class="form-control" placeholder="Nomba foonu" id="phonenumber">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="suggestion" class="sr-only">Suggestion:</label>
+                                        <select class="form-control" name="suggestion" id="suggestion">
+                                            <option selected >Àbá</option>
+                                            <option value="B1">Iyin</option>
+                                            <option value="B2">Iwaadi</option>
+                                            <option value="B3">Edun ọkan</option>
+                                            </select>
+                                    
+                                    
+                                    </div>
+                                </div>
+                            </div> 
+                                    <div class="form-group">
+                                        <label for="message" class="sr-only">Number of Children</label>
+                                        <textarea type="text" row="10" class="form-control" placeholder="Ifiranṣẹ" id="message"></textarea>
+                                    </div>
+                                    
+                                    <a href="#0" class="mb-3"><button id="submit-button"class="btn text-white">Firanṣẹ</button> </a>
+                        </form>
+                    </div>    
+                </div>
+            </section>
+        </div>
+        <section id="section-newsletter">
+            <div class="container">
+                <form class="py-5 text-white">
+                    <h2 class="text-center">Se alabapin si iwe iroyin wa</h2>
+                    <p>Iwe irin ajo kan si iwe iroyin wa</p>
+                    
+                   <div class="row">
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                        <label for="input-name" class="sr-only">Your Name:</label>
+                        <input type="text" class="form-control" placeholder="Oruko" id="input-name">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label for="input-email" class="sr-only">Your Email:</label>
+                        <input type="email" class="form-control" placeholder="mail@example.com" id="input-email">
+                      </div>
+                    </div>
+                   </div>
+                  <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" id="input-terms" value="terms">
+                            Mo ti kaa, mo si ti gba <a href="#" data-toggle="modal" data-target="#modal">terms and conditions</a>.
+                        </label>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <small class="form-text">O le fi opin si gbigba iwe iroyin wa nigbakugba.</small>
+                        <button type="submit" class="btn btn-dark">Se alabapin</button>
+                    </div>
+                </form>
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitle">Terms and conditions</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    <p><h2>PART I: GENERAL CONDITIONS</h2>
+                                    <h4>Definitions</h4>
+                                    <p>1. In these conditions</p>
+                                    <p><b>Authority</b> means a duly constituted legal or administrative person, acting within its legal
+                                    powers and exercising jurisdiction within any nation, state, municipality, port or airport.
+                                    <p><b>Carriage</b> means the whole or any part of the operations and services of whatsoever
+                                    nature undertaken by the Company in relation to the Goods, including but not limited to the
+                                    loading, unloading, storage, warehousing and handling of the goods.</p>
+                                    <p><b>CMR Convention</b> means the Convention on the Contract for the International Carriage of
+                                    Goods by Road, signed at Geneva on May 19, 1956.
+                                    Company is Bertling Logistics Spain S.L.</p>
+                                    <p><b>Container</b> includes, unless otherwise indicated, any vehicle, container, flat, pallet, trailer,
+                                    transportable tank and similar items used for the Consolidation of goods as well as mobile
+                                    plant and timber packages.</p>
+                                    <p><b>Customer</b> means any person, whether themselves an agent or a principal, at whose
+                                    request or on whose behalf the Company provides a service.</p>
+                                    <p><b>Dangerous Goods</b> includes goods that are or may become of a dangerous, inflammable,
+                                    radio-active or damaging nature, goods liable to taint or affect other goods and goods
+                                    likely to harbour or encourage vermin or other pests.</p>
+                                    <p><b>Goods</b> includes the cargo and any container not supplied by or on behalf of the Company,
+                                    in respect of which the Company provides a service;</p>
+                                    <p><b>Hague Rules</b> means the provisions of the International Convention for the Unification of
+                                    certain rules Relating to Bills of Lading signed at Brussels on 25th August 1924.
+                                    Hague-Visby Rules means the Protocol to Amend the International Convention for the
+                                    Unification of Certain Rules of Law relating to Bills of Lading, signed at Brussels on
+                                    February 23, 1968.</p>
+                                    <p><b>Instructions</b> means a statement of the Customers specific requirements.
+                                    Montreal Convention means the Convention for the Unification of Certain Rules for
+                                    International Carriage by Air, signed at Montreal on May 28, 1999.</p>
+                                    <p><b>Owner</b> includes the owner, shipper and consignee of the Goods and any other Person
+                                    who has or may have a legal or equitable relationship to the Goods at a relevant point of
+                                    time and anyone acting on their behalf.</p>
+                                    <p><b>Person</b> includes persons or anybody or bodies corporate.
+                                    Heading of clauses or groups of clauses in these conditions are for indicative purposes
+                                    only.
+                                    The Customer’s attention is drawn to the Clauses hereof that exclude or limit the
+                                    Company’s liability and those that require the Customer to indemnify the Company in
+                                    certain circumstances.</p>
+                                    </p>
+                            </div>
+                            <div class="modal-footer"> 
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><a href="#section-top" class="text-white mb-3">Ile</a></li>
+                                <li> <a href="#0" class="text-white">Awon iwe-iwe</a></ul>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><a href="#0" class="text-white">Kan si wa</a></li>
+                                <li> <a href="#0" class="text-white">Tiketi</a></ul>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><a href="#0" class="text-white">Awon Ibere nigbagbogbo</a></li>
+                                <li> <a href="#section-AboutUs" class="text-white">Nipa</a></ul>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><a href="#0" class="text-white">Policy</a></li>
+                                <li> <a href="#" data-toggle="modal" data-target="#modal" class="text-white">Terms and Conditions</a></ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                            <small class="text-white ">&copy; Gbogbo ẹtọ wa ni ipamo 2021.</small></div>
+                </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js" integrity="sha256-MMt0/21G3z0Zg4ET1kI3HC9npItDowkitRDVr0FhCxA=" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
